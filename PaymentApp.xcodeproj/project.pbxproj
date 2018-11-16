@@ -13,6 +13,7 @@
 		A06D04F0219DF90A004C4579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06D04EF219DF90A004C4579 /* Assets.xcassets */; };
 		A06D04F3219DF90A004C4579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06D04F1219DF90A004C4579 /* LaunchScreen.storyboard */; };
 		A06D04F6219DF90A004C4579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A06D04F5219DF90A004C4579 /* main.m */; };
+		A06D0506219E46DD004C4579 /* EAAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A06D0505219E46DC004C4579 /* EAAPIManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		A06D04F2219DF90A004C4579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A06D04F4219DF90A004C4579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A06D04F5219DF90A004C4579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A06D0504219E46DC004C4579 /* EAAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAAPIManager.h; sourceTree = "<group>"; };
+		A06D0505219E46DC004C4579 /* EAAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAAPIManager.m; sourceTree = "<group>"; };
 		A6BE90D49D60E333D5E12D17 /* Pods-PaymentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaymentApp/Pods-PaymentApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +66,7 @@
 		A06D04E5219DF909004C4579 /* PaymentApp */ = {
 			isa = PBXGroup;
 			children = (
+				A06D0503219E46C9004C4579 /* Managers */,
 				A06D04E6219DF909004C4579 /* AppDelegate.h */,
 				A06D04E7219DF909004C4579 /* AppDelegate.m */,
 				A06D04E9219DF909004C4579 /* EAMainViewController.h */,
@@ -73,6 +77,15 @@
 				A06D04F5219DF90A004C4579 /* main.m */,
 			);
 			path = PaymentApp;
+			sourceTree = "<group>";
+		};
+		A06D0503219E46C9004C4579 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A06D0504219E46DC004C4579 /* EAAPIManager.h */,
+				A06D0505219E46DC004C4579 /* EAAPIManager.m */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		B0889543169A7EC4A2A01713 /* Frameworks */ = {
@@ -187,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06D0506219E46DD004C4579 /* EAAPIManager.m in Sources */,
 				A06D04EB219DF909004C4579 /* EAMainViewController.m in Sources */,
 				A06D04F6219DF90A004C4579 /* main.m in Sources */,
 				A06D04E8219DF909004C4579 /* AppDelegate.m in Sources */,
