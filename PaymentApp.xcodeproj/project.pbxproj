@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CE35419A69D00966828D199 /* libPods-PaymentApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB86391DA4FAF0A8AF18150 /* libPods-PaymentApp.a */; };
 		A06D04E8219DF909004C4579 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A06D04E7219DF909004C4579 /* AppDelegate.m */; };
 		A06D04EB219DF909004C4579 /* EAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06D04EA219DF909004C4579 /* EAMainViewController.m */; };
 		A06D04F0219DF90A004C4579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06D04EF219DF90A004C4579 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EB86391DA4FAF0A8AF18150 /* libPods-PaymentApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PaymentApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BAB9F73F7BADF8F83D7A95 /* Pods-PaymentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaymentApp/Pods-PaymentApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A06D04E3219DF909004C4579 /* PaymentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06D04E6219DF909004C4579 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A06D04E7219DF909004C4579 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A06D04F2219DF90A004C4579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A06D04F4219DF90A004C4579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A06D04F5219DF90A004C4579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6BE90D49D60E333D5E12D17 /* Pods-PaymentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaymentApp/Pods-PaymentApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE35419A69D00966828D199 /* libPods-PaymentApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				A06D04E5219DF909004C4579 /* PaymentApp */,
 				A06D04E4219DF909004C4579 /* Products */,
+				E4B3C52BD1E9F69CF137D8F5 /* Pods */,
+				B0889543169A7EC4A2A01713 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +75,23 @@
 			path = PaymentApp;
 			sourceTree = "<group>";
 		};
+		B0889543169A7EC4A2A01713 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EB86391DA4FAF0A8AF18150 /* libPods-PaymentApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4B3C52BD1E9F69CF137D8F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97BAB9F73F7BADF8F83D7A95 /* Pods-PaymentApp.debug.xcconfig */,
+				A6BE90D49D60E333D5E12D17 /* Pods-PaymentApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -75,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A06D04F9219DF90A004C4579 /* Build configuration list for PBXNativeTarget "PaymentApp" */;
 			buildPhases = (
+				830F6A892592DFB9A77F3634 /* [CP] Check Pods Manifest.lock */,
 				A06D04DF219DF909004C4579 /* Sources */,
 				A06D04E0219DF909004C4579 /* Frameworks */,
 				A06D04E1219DF909004C4579 /* Resources */,
@@ -131,6 +156,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		830F6A892592DFB9A77F3634 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaymentApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A06D04DF219DF909004C4579 /* Sources */ = {
@@ -271,6 +321,7 @@
 		};
 		A06D04FA219DF90A004C4579 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97BAB9F73F7BADF8F83D7A95 /* Pods-PaymentApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +339,7 @@
 		};
 		A06D04FB219DF90A004C4579 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6BE90D49D60E333D5E12D17 /* Pods-PaymentApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
