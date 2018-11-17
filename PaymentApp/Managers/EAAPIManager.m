@@ -11,7 +11,7 @@
 #pragma mark - Manager Notifications
 
 NSString * const EAAPIManagerPaymentMethodsResutlsNotification = @"com.ea.networking.PaymentApp.PaymentMethodsResutls";
-NSString * const EAAPIManagerIssuersResutlsNotification = @"com.ea.networking.PaymentApp.IssuersResutls";
+NSString * const EAAPIManagerCardIssuersResutlsNotification = @"com.ea.networking.PaymentApp.IssuersResutls";
 NSString * const EAAPIManagerInstallmentsMessageResutlsNotification = @"com.ea.networking.PaymentApp.InstallmentsMessageResutls";
 
 #pragma mark - Manager Implementation
@@ -47,18 +47,27 @@ NSString * const EAAPIManagerInstallmentsMessageResutlsNotification = @"com.ea.n
       }];
 }
 
-- (void)requestIssuersByPayMethodID:(NSString  * _Nonnull)payMethodID
+- (void)requestIssuersByPaymentMethodId:(NSString  * _Nonnull)paymentMethodId
 {
+    if (!paymentMethodId || [paymentMethodId isEqualToString:@""]) {
+        NSLog(@"Invalid payment method id");
+        return;
+    }
+    
+    __block NSString *blockPaymentMethodId = paymentMethodId;
+    
     NSDictionary *parameters = @{
                                  @"public_key":[[NSBundle mainBundle] objectForInfoDictionaryKey:@"APIPublicKey"],
-                                 @"payment_method_id":payMethodID
+                                 @"payment_method_id":paymentMethodId
                                  };
     
     [self GET:@"v1/payment_methods/card_issuers"
    parameters:parameters
      progress:nil
       success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-          [[NSNotificationCenter defaultCenter] postNotificationName:EAAPIManagerIssuersResutlsNotification object:responseObject userInfo:nil];
+          [[NSNotificationCenter defaultCenter] postNotificationName:EAAPIManagerCardIssuersResutlsNotification
+                                                              object:responseObject
+                                                            userInfo:@{@"paymentMethodId":blockPaymentMethodId}];
       }
       failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
           NSLog(@"error: %@",error);
@@ -66,21 +75,41 @@ NSString * const EAAPIManagerInstallmentsMessageResutlsNotification = @"com.ea.n
 }
 
 - (void)requestInstallmentsMessageForAmount:(NSNumber * _Nonnull)amount
-                            withPayMethodID:(NSString  * _Nonnull)payMethodID
-                                andIssuerID:(NSNumber * _Nonnull)issuerID
+                        withPaymentMethodId:(NSString * _Nonnull)paymentMethodId
+                            andCardIssuerId:(NSString * _Nonnull)cardIssuerId
 {
+    
+    if (!paymentMethodId || [paymentMethodId isEqualToString:@""]) {
+        NSLog(@"Invalid payment method id");
+        return;
+        
+    }else if (!amount || amount < 0){
+        NSLog(@"Invalid amount");
+        return;
+        
+    }else if (!cardIssuerId || [cardIssuerId isEqualToString:@""]){
+        NSLog(@"Invalid issuerId id");
+        return;
+    }
+    
+    __block NSString *blockPaymentMethodId = paymentMethodId;
+    __block NSString *blockCardIssuerId = cardIssuerId;
+    
     NSDictionary *parameters = @{
                                  @"public_key":[[NSBundle mainBundle] objectForInfoDictionaryKey:@"APIPublicKey"],
-                                 @"payment_method_id":payMethodID,
+                                 @"payment_method_id":paymentMethodId,
                                  @"amount":amount,
-                                 @"issuer.id":issuerID
+                                 @"issuer.id":cardIssuerId
                                  };
     
     [self GET:@"v1/payment_methods/installments"
    parameters:parameters
      progress:nil
       success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-          [[NSNotificationCenter defaultCenter] postNotificationName:EAAPIManagerInstallmentsMessageResutlsNotification object:responseObject userInfo:nil];
+          [[NSNotificationCenter defaultCenter] postNotificationName:EAAPIManagerInstallmentsMessageResutlsNotification
+                                                              object:responseObject
+                                                            userInfo:@{@"paymentMethodId":blockPaymentMethodId,
+                                                                       @"cardIssuerId":blockCardIssuerId}];
       }
       failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
           NSLog(@"error: %@",error);
