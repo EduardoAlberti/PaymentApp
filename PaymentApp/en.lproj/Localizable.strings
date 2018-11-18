@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  PaymentApp
+
+  Created by Eduardo on 11/17/18.
+  Copyright © 2018 EA. All rights reserved.
+*/
+
+/* Title for amount payment step */
+"TXT_AMOUNT" = "Amount";
+
+/* Instruction for amount input label */
+"TXT_INSERT_AMOUNT" = "Insert amount";
+
+/* Title for payment methods step */
+"TXT_PAYMENT_METHODS" = "Payment Methods";
+
+/* Title for next step button */
+"TXT_NEXT" = "Next";
+
+/* Title for card issuers step */
+"TXT_CARD_ISSUERS" = "Card Issuers";
+
+/* Title for installments step */
+"TXT_INSTALLMENTS" = "Installments";
+
+/* Summary alert title */
+"TXT_SUMMARY" = "Summary";
+
+/* Summary payment process message */
+"TXT_SUMMARY_MESSAGE" = "You will pay $%@ with %@ of card issuer %@ in %@";
+
+/* New payment button title */
+"TXT_NEW_PAYMENT" = "New payment";
+
+/* Title for back button */
+"TXT_BACK" = "Back";

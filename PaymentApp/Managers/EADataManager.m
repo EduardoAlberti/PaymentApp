@@ -59,10 +59,10 @@
 
 - (NSArray * _Nullable)getPaymentMethods
 {
-    if (!self.paymentMethods) {
+    if (!paymentMethods) {
         [self updatePaymentMethods];
     }
-    return self.paymentMethods;
+    return paymentMethods;
 }
 
 - (NSArray * _Nullable)getCardIssuersForPaymentMethodId:(NSString * _Nonnull)paymentMethodId
