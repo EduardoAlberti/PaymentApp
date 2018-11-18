@@ -18,6 +18,12 @@
 		A06D050C219F5F3A004C4579 /* EAPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A06D050B219F5F3A004C4579 /* EAPaymentMethod.m */; };
 		A06D050F219F6639004C4579 /* EADataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A06D050E219F6639004C4579 /* EADataManager.m */; };
 		A0964BCD219F8D8E002A5B9D /* EAInstallment.m in Sources */ = {isa = PBXBuildFile; fileRef = A0964BCC219F8D8E002A5B9D /* EAInstallment.m */; };
+		A0A392F421A099BB007D0948 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A392F321A099BB007D0948 /* UIView+Additions.m */; };
+		A0A392F821A09E9C007D0948 /* EAAmountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A392F721A09E9C007D0948 /* EAAmountViewController.m */; };
+		A0A6BA7121A0B30600C141CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0A6BA7321A0B30600C141CE /* Localizable.strings */; };
+		A0A6BA7921A0BB6200C141CE /* EAPaymentMethodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A6BA7821A0BB6200C141CE /* EAPaymentMethodsViewController.m */; };
+		A0A6BA7E21A0DBF100C141CE /* EACardIssuersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A6BA7D21A0DBF100C141CE /* EACardIssuersViewController.m */; };
+		A0A6BA8121A0E51900C141CE /* EAInstallmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A6BA8021A0E51900C141CE /* EAInstallmentsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,20 @@
 		A06D050E219F6639004C4579 /* EADataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EADataManager.m; sourceTree = "<group>"; };
 		A0964BCB219F8D8E002A5B9D /* EAInstallment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAInstallment.h; sourceTree = "<group>"; };
 		A0964BCC219F8D8E002A5B9D /* EAInstallment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAInstallment.m; sourceTree = "<group>"; };
+		A0A392F221A099BB007D0948 /* UIView+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		A0A392F321A099BB007D0948 /* UIView+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		A0A392F621A09E9C007D0948 /* EAAmountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAAmountViewController.h; sourceTree = "<group>"; };
+		A0A392F721A09E9C007D0948 /* EAAmountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAAmountViewController.m; sourceTree = "<group>"; };
+		A0A392FA21A0A05A007D0948 /* EAPaymentProcessDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPaymentProcessDelegate.h; sourceTree = "<group>"; };
+		A0A6BA6E21A0B2D600C141CE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A0A6BA7221A0B30600C141CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A0A6BA7421A0B30A00C141CE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A0A6BA7721A0BB6200C141CE /* EAPaymentMethodsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPaymentMethodsViewController.h; sourceTree = "<group>"; };
+		A0A6BA7821A0BB6200C141CE /* EAPaymentMethodsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPaymentMethodsViewController.m; sourceTree = "<group>"; };
+		A0A6BA7C21A0DBF100C141CE /* EACardIssuersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EACardIssuersViewController.h; sourceTree = "<group>"; };
+		A0A6BA7D21A0DBF100C141CE /* EACardIssuersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EACardIssuersViewController.m; sourceTree = "<group>"; };
+		A0A6BA7F21A0E51900C141CE /* EAInstallmentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAInstallmentsViewController.h; sourceTree = "<group>"; };
+		A0A6BA8021A0E51900C141CE /* EAInstallmentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAInstallmentsViewController.m; sourceTree = "<group>"; };
 		A6BE90D49D60E333D5E12D17 /* Pods-PaymentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaymentApp/Pods-PaymentApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,15 +98,17 @@
 		A06D04E5219DF909004C4579 /* PaymentApp */ = {
 			isa = PBXGroup;
 			children = (
+				A0A392F921A09EA3007D0948 /* Protocols */,
+				A0A392F121A099A4007D0948 /* Categories */,
 				A06D0509219F5F00004C4579 /* Models */,
 				A06D0503219E46C9004C4579 /* Managers */,
+				A0A392F521A09E68007D0948 /* ViewControllers */,
 				A06D04E6219DF909004C4579 /* AppDelegate.h */,
 				A06D04E7219DF909004C4579 /* AppDelegate.m */,
-				A06D04E9219DF909004C4579 /* EAMainViewController.h */,
-				A06D04EA219DF909004C4579 /* EAMainViewController.m */,
 				A06D04EF219DF90A004C4579 /* Assets.xcassets */,
 				A06D04F1219DF90A004C4579 /* LaunchScreen.storyboard */,
 				A06D04F4219DF90A004C4579 /* Info.plist */,
+				A0A6BA7321A0B30600C141CE /* Localizable.strings */,
 				A06D04F5219DF90A004C4579 /* main.m */,
 			);
 			path = PaymentApp;
@@ -114,6 +136,40 @@
 				A0964BCC219F8D8E002A5B9D /* EAInstallment.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A0A392F121A099A4007D0948 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A0A392F221A099BB007D0948 /* UIView+Additions.h */,
+				A0A392F321A099BB007D0948 /* UIView+Additions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A0A392F521A09E68007D0948 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A06D04E9219DF909004C4579 /* EAMainViewController.h */,
+				A06D04EA219DF909004C4579 /* EAMainViewController.m */,
+				A0A392F621A09E9C007D0948 /* EAAmountViewController.h */,
+				A0A392F721A09E9C007D0948 /* EAAmountViewController.m */,
+				A0A6BA7721A0BB6200C141CE /* EAPaymentMethodsViewController.h */,
+				A0A6BA7821A0BB6200C141CE /* EAPaymentMethodsViewController.m */,
+				A0A6BA7C21A0DBF100C141CE /* EACardIssuersViewController.h */,
+				A0A6BA7D21A0DBF100C141CE /* EACardIssuersViewController.m */,
+				A0A6BA7F21A0E51900C141CE /* EAInstallmentsViewController.h */,
+				A0A6BA8021A0E51900C141CE /* EAInstallmentsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A0A392F921A09EA3007D0948 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A0A392FA21A0A05A007D0948 /* EAPaymentProcessDelegate.h */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B0889543169A7EC4A2A01713 /* Frameworks */ = {
@@ -175,6 +231,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = A06D04DA219DF909004C4579;
 			productRefGroup = A06D04E4219DF909004C4579 /* Products */;
@@ -192,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A06D04F3219DF90A004C4579 /* LaunchScreen.storyboard in Resources */,
+				A0A6BA7121A0B30600C141CE /* Localizable.strings in Resources */,
 				A06D04F0219DF90A004C4579 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,8 +287,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A06D050C219F5F3A004C4579 /* EAPaymentMethod.m in Sources */,
+				A0A6BA7E21A0DBF100C141CE /* EACardIssuersViewController.m in Sources */,
+				A0A6BA8121A0E51900C141CE /* EAInstallmentsViewController.m in Sources */,
 				A03BA770219F75AE004B2F74 /* EACardIssuer.m in Sources */,
 				A06D0506219E46DD004C4579 /* EAAPIManager.m in Sources */,
+				A0A392F421A099BB007D0948 /* UIView+Additions.m in Sources */,
+				A0A6BA7921A0BB6200C141CE /* EAPaymentMethodsViewController.m in Sources */,
+				A0A392F821A09E9C007D0948 /* EAAmountViewController.m in Sources */,
 				A0964BCD219F8D8E002A5B9D /* EAInstallment.m in Sources */,
 				A06D04EB219DF909004C4579 /* EAMainViewController.m in Sources */,
 				A06D050F219F6639004C4579 /* EADataManager.m in Sources */,
@@ -246,8 +309,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				A06D04F2219DF90A004C4579 /* Base */,
+				A0A6BA6E21A0B2D600C141CE /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A0A6BA7321A0B30600C141CE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0A6BA7221A0B30600C141CE /* en */,
+				A0A6BA7421A0B30A00C141CE /* es-419 */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -257,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -316,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

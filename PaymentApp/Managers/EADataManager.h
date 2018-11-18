@@ -14,7 +14,7 @@
 #import "EAInstallment.h"
 
 @interface EADataManager : NSObject
-@property (nonatomic, strong) NSArray *paymentMethods;
+@property (nonatomic, strong, getter = getPaymentMethods) NSArray *paymentMethods;
 
 + (id)sharedManager;
 
