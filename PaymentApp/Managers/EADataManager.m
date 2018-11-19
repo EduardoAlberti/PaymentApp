@@ -129,7 +129,10 @@
     
     for (NSDictionary *paymentMethodData in data) {
         tempPaymentMethod = [[EAPaymentMethod alloc] initWithDictionary:paymentMethodData];
-        [list addObject:tempPaymentMethod];
+        
+        if ([tempPaymentMethod.paymentMethodType isEqualToString:@"credit_card"]) {
+            [list addObject:tempPaymentMethod];
+        }
     }
     
     self.paymentMethods = [NSArray arrayWithArray:list];
